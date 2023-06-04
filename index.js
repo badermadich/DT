@@ -31,7 +31,7 @@
     let body = req.body;
     const data =new dht11Model(body)
     data.save()
-    console.log({body})
+    
     res.status(200).json({
       message:"data has been received"
     })
